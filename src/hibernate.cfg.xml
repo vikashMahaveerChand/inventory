@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+<hibernate-configuration>  
+    <session-factory>  
+            
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+        <property name="connection.url">jdbc:mysql://localhost/inventory</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password"></property>  
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<mapping class="com.inventory.model.Area"/>
+		<mapping class="com.inventory.model.Bank"/>
+		<mapping class="com.inventory.model.City"/>
+		<mapping class="com.inventory.model.Contact"/>
+		<mapping class="com.inventory.model.ContactType"/>
+		<mapping class="com.inventory.model.Employee"/>
+		<mapping class="com.inventory.model.EmployeeDetails"/>
+		<mapping class="com.inventory.model.EntryType"/>
+		<mapping class="com.inventory.model.Licence"/>
+		<mapping class="com.inventory.model.LicenceOpeningStockDetails"/>
+        <mapping class="com.inventory.model.LicenceType"/>
+        <mapping class="com.inventory.model.Metal"/>
+        <mapping class="com.inventory.model.Ornament"/>
+        <mapping class="com.inventory.model.OrnamentGroup"/>
+        <mapping class="com.inventory.model.OrnamentSubGroup"/>
+        <mapping class="com.inventory.model.State"/>
+        <mapping class="com.inventory.model.Street"/>
+        <mapping class="com.inventory.model.User"/>
+        <mapping class="com.inventory.model.UserType"/>
+          
+    </session-factory>  
+</hibernate-configuration> 
